@@ -1,64 +1,70 @@
 Gerenciador
-Descrição
-Sistema desenvolvido em Java para gerenciar projetos e equipes, criado para fins acadêmicos. Permite cadastro de usuários, projetos e equipes, com interface via console. Usa o padrão MVC e armazenamento em memória.
-Funcionalidades
+Sistema em Java para gestão de projetos e equipes, desenvolvido para fins acadêmicos. Utiliza o padrão MVC, interface de console e armazenamento em memória para gerenciar cadastros de usuários, projetos e equipes.
 
-Cadastro de Usuários: Nome, CPF, e-mail, cargo, login, senha, perfil (ADMINISTRADOR, GERENTE, COLABORADOR).
-Cadastro de Projetos: Nome, descrição, datas, status (PLANEJADO, EM_ANDAMENTO, CONCLUIDO, CANCELADO), gerente.
-Cadastro de Equipes: Nome, descrição, membros.
-Listagem: Usuários, projetos e equipes.
-Pendentes: Cadastro de tarefas, alocação de equipes, relatórios.
+📋 Visão Geral
+O Gerenciador é um sistema de informação projetado para facilitar a gestão de projetos e equipes. Desenvolvido individualmente, suporta cadastros e listagens com validações, seguindo boas práticas de programação orientada a objetos (POO). Ideal para uso educacional.
+🚀 Funcionalidades
 
-Estrutura
+Usuários: Cadastro/listagem (nome, CPF, e-mail, cargo, login, senha, perfil: Administrador, Gerente, Colaborador).
+Projetos: Cadastro/listagem (nome, descrição, datas, status: Planejado, Em Andamento, Concluído, Cancelado, gerente).
+Equipes: Cadastro/listagem (nome, descrição, membros).
+Em Desenvolvimento: Tarefas, alocação de equipes, relatórios.
 
+🏗️ Arquitetura
+
+Padrão: Model-View-Controller (MVC).
 Pacotes:
 model: Entidades (Usuario, Projeto, Equipe).
-service: Lógica de negócios (UsuarioService, ProjetoService, EquipeService).
+service: Lógica (UsuarioService, ProjetoService, EquipeService).
 repository: Armazenamento (UsuarioRepository, ProjetoRepository, EquipeRepository).
-controller: Interação (Main.java).
-enums: Perfis e status (Perfil, Status).
+enums: Perfil, Status.
 
 
-Arquitetura: MVC.
 Armazenamento: Memória (HashMap, ArrayList).
 
-Pré-requisitos
+🛠️ Tecnologias
 
-Java JDK 17 ou superior.
-IDE (ex: VS Code com Java Extension Pack).
-Git e GitHub Desktop (opcional).
+Java JDK 17
+Visual Studio Code (Java Extension Pack)
+Bibliotecas: java.util, java.time
 
-Como Executar
+📦 Pré-requisitos
+
+Java JDK 17
+IDE (VS Code, IntelliJ)
+Git
+
+⚙️ Instalação
 
 Clone o repositório:git clone https://github.com/SEU_USUARIO/Gerenciador.git
 
 
-Navegue até a pasta:cd Gerenciador
+Abra a pasta Gerenciador no VS Code.
+Configure o ambiente Java (JAVA_HOME).
 
+▶️ Como Executar
 
-Compile:javac src/controller/Main.java
+Compile o projeto:javac src/controller/Main.java
 
 
 Execute:java src.controller.Main
 
 
-Use o menu no console para cadastrar/listar.
+Use o menu (opções 1-7) para interagir.
 
-Instalação
 
-Baixe o JDK 17 em oracle.com.
-Configure JAVA_HOME e PATH.
-Abra a pasta src em uma IDE.
+📖 Uso
 
-Uso
+Menu: Escolha opções para gerenciar usuários, projetos ou equipes.
+Exemplo:
+Cadastre um usuário (GERENTE).
+Cadastre um projeto com gerente.
+Cadastre uma equipe com membros.
 
-Menu: Escolha opções (1-7) para gerenciar usuários, projetos, equipes.
-Exemplo: Cadastre um usuário (GERENTE), um projeto e uma equipe.
 
-Autor
 
-Desenvolvido por [SEU_NOME].
+👨‍💻 Autor
+Gilmar Oliveira
 
-Licença
-
-MIT License (uso acadêmico).
+📜 Licença
+MIT License – Uso acadêmico.
