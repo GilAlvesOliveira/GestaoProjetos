@@ -73,10 +73,10 @@ O **Gerenciador** é um sistema de informação projetado para facilitar a admin
 
 ```sh
 # Clone o repositório
-git clone https://github.com/SEU_USUARIO/Gerenciador.git
+git clone https://github.com/GilAlvesOliveira/GestaoProjetos
 
 # Acesse a pasta do projeto
-cd Gerenciador
+cd src
 ```
 
 ---
